@@ -1,4 +1,4 @@
-# CO2 Emissions Prediction for Green Supply Chains: Complete Project Documentation
+# CO2 Emissions Prediction for Green Supply Chains
 
 ## Table of Contents
 1. Introduction
