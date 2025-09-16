@@ -131,11 +131,11 @@ The following Mermaid flowchart describes the model workflow, from data input to
 
 ```mermaid
 graph TD
-    A[Input Data<br>Distance, Weight, Vehicle_Type, Fuel_Efficiency] --> B[Feature Engineering]
-    B -->|Consumption = Distance / Fuel_Efficiency| C[One-Hot Encode Vehicle_Type]
-    C --> D[Train RandomForestRegressor]
-    D -->|Bootstrap Samples<br>Random Feature Selection<br>Build 100 Trees| E[Predict CO2 Emissions]
-    E -->|Average Tree Outputs| F[Output: CO2 Emissions (kg)]
+    A["Input Data<br/>Distance, Weight, Vehicle_Type, Fuel_Efficiency"] --> B["Feature Engineering"]
+    B -->|Consumption = Distance / Fuel_Efficiency| C["One-Hot Encode Vehicle_Type"]
+    C --> D["Train RandomForestRegressor"]
+    D -->|"Bootstrap Samples<br/>Random Feature Selection<br/>Build 100 Trees"| E["Predict CO2 Emissions"]
+    E -->|"Average Tree Outputs"| F["Output: CO2 Emissions (kg)"]
 ```
 
 **Description**: The workflow starts with input data, applies feature engineering (calculating Consumption and encoding Vehicle_Type), trains a RandomForestRegressor with 100 trees using bootstrapping and random feature selection, and outputs predicted CO2 emissions by averaging tree predictions.
